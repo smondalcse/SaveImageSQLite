@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_layout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Image Download and Save to Internal Storage"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Image"
+        android:layout_margin="25dp"
+        android:layout_gravity="top|center_horizontal"
+        />
+
+    <TextView
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Show Download Image Directly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:layout_anchor="@id/btn_do"
+        android:layout_gravity="bottom"
+        app:layout_anchorGravity="bottom"
+        android:layout_margin="10dp"
+        android:background="#c3ccbc"
+        />
+
+    <TextView
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Show Image from Internal Storage after download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_internal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:layout_anchor="@id/iv"
+        android:layout_gravity="bottom"
+        app:layout_anchorGravity="bottom"
+        android:layout_margin="10dp"
+        android:background="#bcc7cc"
+        />
+
+</LinearLayout>
